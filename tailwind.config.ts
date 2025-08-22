@@ -61,7 +61,10 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Chronicle specific colors
+				'solid-5': 'hsl(var(--solid-5))',
+				'solid-11': 'hsl(var(--solid-11))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +87,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-50%)' }
+				},
+				'marquee-vertical': {
+					'0%': { transform: 'translateY(0%)' },
+					'100%': { transform: 'translateY(-50%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'marquee': 'marquee 30s linear infinite',
+				'marquee-vertical': 'marquee-vertical 20s linear infinite'
 			}
 		}
 	},
